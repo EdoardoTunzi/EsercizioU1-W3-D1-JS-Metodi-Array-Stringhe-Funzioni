@@ -57,6 +57,16 @@ getEvenValues(numbersArray)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 
+const sumAllElements = function (array) {
+  let total = 0;
+  array.forEach((number) => {
+    total += number;
+  });
+  console.log(`The sum of all element in the array is ${total}`);
+  return total;
+};
+sumAllElements(numbersArray);
+
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
