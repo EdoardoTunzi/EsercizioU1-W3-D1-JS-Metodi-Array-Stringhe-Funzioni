@@ -99,6 +99,18 @@ getStringCharCount(stringArray);
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+const getOddNums = function () {
+  const oddNums = [];
+  for (let i = 0; i < 100; i++) {
+    if (i % 2 !== 0) {
+      oddNums.push(i);
+    }
+  }
+  console.log(oddNums);
+  return oddNums;
+};
+
+getOddNums();
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
