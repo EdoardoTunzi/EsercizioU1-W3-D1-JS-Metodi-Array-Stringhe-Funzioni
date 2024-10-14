@@ -218,6 +218,16 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
+const oldestMovie = function (array) {
+  let smallestElement = array[0];
+  array.forEach((movie) => {
+    if (parseInt(movie.Year) < parseInt(smallestElement.Year)) {
+      smallestElement = movie;
+    }
+  });
+  return smallestElement;
+};
+console.log(oldestMovie(movies));
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
