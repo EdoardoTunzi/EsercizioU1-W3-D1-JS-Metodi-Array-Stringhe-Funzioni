@@ -88,6 +88,13 @@ incrementArray(numbersArray2, 2);
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+const stringArray = ["Epicode", "is", "awesome"];
+const getStringCharCount = function (array) {
+  let stringCountArray = array.map((element) => element.length);
+  console.log(stringCountArray);
+  return stringCountArray;
+};
+getStringCharCount(stringArray);
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
