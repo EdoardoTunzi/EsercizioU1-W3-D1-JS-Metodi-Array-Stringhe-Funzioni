@@ -32,6 +32,26 @@ returnArrayOf10();
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
+const numbersArray = [10, 27, 44, 22, 18, 45, 21, 88, 13];
+
+const getEvenValues = function (array) {
+  const evenNumbers = array.filter((number) => number % 2 === 0);
+  return evenNumbers;
+};
+
+console.log(getEvenValues(numbersArray));
+
+/* SOLUZIONE ALTERNATIVA SENZA FILTER
+const getEvenValues = function(array) {
+array.forEach(number => {
+if (number % 2 === 0) {
+console.log(number)
+}  
+});
+}
+getEvenValues(numbersArray)
+
+*/
 
 /* ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
