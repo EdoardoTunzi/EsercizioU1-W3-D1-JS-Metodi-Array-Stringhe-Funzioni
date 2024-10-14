@@ -70,10 +70,19 @@ sumAllElements(numbersArray);
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
+// NON ABBIAMO AFFRONTATO L'ARGOMENTO NELLA LEZIONE ODIERNA, CI è STATO CHIESTO DI SKIPPARE QUESTO ESERCIZIO
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+
+const numbersArray2 = [1, 2, 3, 4, 5, 6, 7, 8];
+const incrementArray = function (array, n) {
+  let newArray = array.map((number) => number + n);
+  console.log(newArray);
+  return newArray;
+};
+incrementArray(numbersArray2, 2);
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
